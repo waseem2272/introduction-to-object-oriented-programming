@@ -5,6 +5,7 @@ public class MotorBikeRunner {
 
         MotorBike ducati = new MotorBike();
         MotorBike honda = new MotorBike();
+        MotorBike suzuki = new MotorBike(5);
 
         ducati.start();
         honda.start();

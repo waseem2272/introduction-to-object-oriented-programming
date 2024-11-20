@@ -5,6 +5,14 @@ public class MotorBike {
     // state
     private int speed;
 
+    MotorBike() {
+        this(5);
+    }
+
+    MotorBike(int speed) {
+        this.speed = speed;
+    }
+
     public void setSpeed(int speed) {
         if (speed > 0)
             this.speed = speed;
