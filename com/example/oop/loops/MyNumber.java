@@ -8,11 +8,15 @@ public class MyNumber {
     }
 
     public boolean isPrime() {
-
-        if (this.number % 2 == 0) {
-
+        if (this.number <= 1) { // 0 and 1 are not prime
+            return false;
         }
-
-        return false;
+        for (int i = 2; i * i <= this.number; i++) { // Check divisors up to √number
+            if (this.number % i == 0) {
+                return false; // Divisible by i, not a prime number
+            }
+        }
+        return true; // No divisors found, it's a prime number
     }
+
 }
