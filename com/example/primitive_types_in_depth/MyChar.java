@@ -1,4 +1,4 @@
-package com.example.oop.primitive_types_in_depth;
+package com.example.primitive_types_in_depth;
 
 public class MyChar {
 

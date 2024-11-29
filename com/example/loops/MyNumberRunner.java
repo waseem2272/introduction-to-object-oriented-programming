@@ -1,6 +1,4 @@
-package com.example.oop.loops;
-
-import java.util.Scanner;
+package com.example.loops;
 
 public class MyNumberRunner {
     public static void main(String[] args) {

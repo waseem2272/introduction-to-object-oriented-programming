@@ -1,4 +1,4 @@
-package com.example.oop.loops;
+package com.example.loops;
 
 import java.util.Scanner;
 

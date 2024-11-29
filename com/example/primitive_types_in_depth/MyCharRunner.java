@@ -1,6 +1,4 @@
-package com.example.oop.primitive_types_in_depth;
-
-import java.util.Set;
+package com.example.primitive_types_in_depth;
 
 public class MyCharRunner {
     public static void main(String[] args) {
