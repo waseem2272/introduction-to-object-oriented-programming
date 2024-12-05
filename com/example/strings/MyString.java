@@ -1,5 +1,7 @@
 package com.example.strings;
 
+import java.util.Arrays;
+
 public class MyString {
 
     private String str;
@@ -74,8 +76,38 @@ public class MyString {
 
     public boolean isPalindrome(String palindrome) {
 
+        if (palindrome == null || palindrome.isEmpty())
+            return false;
 
+        int left = 0;
+        int right = palindrome.length() - 1;
 
-        return false;
+        while (left < right) {
+            if (Character.toLowerCase(palindrome.charAt(left)) != Character.toLowerCase(palindrome.charAt(right)))
+                return false;
+
+            left++;
+            right--;
+        }
+
+        return true;
+    }
+
+    public boolean isAnagram(String string1, String string2) {
+
+        // guard check
+        if (string1 == null || string2 == null || string1.length() != string2.length()) {
+            return false; // Strings must be of the same length
+        }
+
+        // Convert strings to lowercase to make it case-insensitive
+        char[] charArray1 = string1.toLowerCase().toCharArray();
+        char[] charArray2 = string2.toLowerCase().toCharArray();
+
+        // sort the char arrays
+        Arrays.sort(charArray1);
+        Arrays.sort(charArray2);
+
+        return Arrays.equals(charArray1, charArray2);
     }
 }
