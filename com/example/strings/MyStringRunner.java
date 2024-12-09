@@ -23,6 +23,19 @@ public class MyStringRunner {
         System.out.println("Is the " + string + " Palindrome? " + myString.isPalindrome(string));
         System.out.println("Are the " + string1 + " and " + string2 + " Anagrams? " + myString.isAnagram(string1, string2));
 
+        String strWithLeadingZeros = "00000123569";
+        System.out.println("Before removing the leading zeros from string: " + strWithLeadingZeros);
+
+        System.out.println("After removing the leading zeros from string: " + myString.removeLeadingZeros(strWithLeadingZeros));
+
+        System.out.println("Before sorting the string: " + string1);
+
+        System.out.println("After sorting the string: " + myString.sortString(string1));
+
+        Integer integer = 483470432;
+
+        System.out.println("After sorting the integer: " + myString.sortDigits(integer));
+
         String[] languages = {"Java", "C++", "Python"};
         System.out.println(String.join(" | ", languages));
 

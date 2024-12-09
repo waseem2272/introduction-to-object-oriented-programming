@@ -1,4 +1,4 @@
-package com.example.oop;
+package com.example.oop.level1;
 
 public class Book {
     private int noOfCopies;

@@ -110,4 +110,38 @@ public class MyString {
 
         return Arrays.equals(charArray1, charArray2);
     }
+
+    public String removeLeadingZeros(String strWithLeadingZeros) {
+
+        if (strWithLeadingZeros == null || strWithLeadingZeros.isEmpty())
+            return "Error";
+
+        int i = 0;
+        while (i < strWithLeadingZeros.length() && strWithLeadingZeros.charAt(i) == '0')
+            i++;
+
+        StringBuilder sb = new StringBuilder(strWithLeadingZeros);
+
+        sb.replace(0, i, "");
+
+        return sb.toString();
+    }
+
+    public String sortString(String string1) {
+
+        char[] charArray = string1.toLowerCase().toCharArray();
+
+        Arrays.sort(charArray);
+
+        return String.valueOf(charArray);
+    }
+
+    public String sortDigits(Integer integer) {
+
+        char[] charArray = integer.toString().toCharArray();
+
+        Arrays.sort(charArray);
+
+        return String.valueOf(charArray);
+    }
 }

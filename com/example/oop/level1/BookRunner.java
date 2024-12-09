@@ -1,4 +1,4 @@
-package com.example.oop;
+package com.example.oop.level1;
 
 public class BookRunner {
     public static void main(String[] args) {
