@@ -9,7 +9,6 @@ public class Book {
     private String name;
     private String author;
 
-    private Review review;
     private List<Review> reviews;
 
     public Book(int id, String name, String author) {
@@ -25,12 +24,8 @@ public class Book {
         this.reviews.add(review);
     }
 
-    public List<Review> getReviews() {
-        return this.reviews;
-    }
-
     public String toString() {
         return String.format("Name: %s, Author: %s, Reviews: %s",
-                this.name, this.author, this.getReviews());
+                this.name, this.author, this.reviews);
     }
 }
